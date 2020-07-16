@@ -1,0 +1,88 @@
+/*
+Theme Name: Salient Child Theme
+Theme URI: prioritypropertypreservation.com
+Description: This is a custom child theme for Salient
+Author: Saroar Hossain
+Author URI: prioritypropertypreservation.com
+Template: salient
+Version: 0.1
+*/
+
+/* Custom Styles By Hossain */
+.mail_subscription .subscription_form {
+    display: flex;
+}
+.mail_subscription .subscription_form input[type="submit"] {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    box-shadow: none !important;
+    width: 150px;
+}
+.mail_subscription .subscription_form input[type="submit"]:hover {
+    box-shadow: none !important;
+    transform: translateY(0);
+}
+.mail_subscription .subscription_form input[type="email"] {
+    background-color: #ffff;
+    border-radius: 5px;
+    color: #111;
+}
+#footer-outer #footer-widgets .widget h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.woocommerce-tabs.wc-tabs-wrapper.full-width-tabs {
+    display: none;
+}
+.cart-collaterals form.woocommerce-shipping-calculator {
+    display: none;
+}
+
+.yith_wapo_groups_container h3 {
+    font-size: 18px;
+    margin-bottom: 5px !important;
+    margin-top: 0px !important;
+}
+.ywapo_input_container {
+    margin-bottom: 0 !important;
+    display: flex !important;
+    align-items: end;
+}
+.ywapo_input_container label.ywapo_label {
+    line-height: 18px !important;
+}
+.ywapo_input_container .ywapo_input {
+    margin-top: 0px !important;
+    height: 21px !important;
+}
+.ywapo_input_container label.ywapo_label span {
+    margin-top: -1px !important;
+    display: inline-block !important;
+}
+body.single-product span.sku_wrapper,
+body.single-product .zaddon_data{
+    display: none !important;
+}
+
+
+p.cart-empty.woocommerce-info {
+    font-size: 30px !important;
+    line-height: 38px;
+}
+@media only screen and (max-width: 1200px) {
+	p.cart-empty.woocommerce-info {
+		font-size: 26px !important;
+		line-height: 32px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	p.cart-empty.woocommerce-info {
+		font-size: 22px !important;
+		line-height: 28px;
+	}
+	.widget.woocommerce.widget_product_categories h4 {
+		font-size: 22px !important;
+		margin-bottom: 15px !important;
+	}
+}
