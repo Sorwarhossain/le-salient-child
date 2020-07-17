@@ -399,5 +399,16 @@ function le_wc_minimum_order_amount() {
  
 
 
-
-//echo var_dump(get_option('testing'));
+add_filter( 'gettext', 'le_change_admin_area_texts', 20, 3 );
+function le_change_admin_area_texts( $translated_text, $text, $domain ) {
+ 
+    if ( is_admin() ) {
+ 
+        if($translated_text == 'WooCommerce Status'){
+        	$translated_text = __( 'Le Crescendo Status', 'theme_text_domain' );
+        }
+ 
+    }
+ 
+    return $translated_text;
+}
