@@ -293,6 +293,13 @@ function le_delivery_note_custom_styles() {
 	ul.wc-item-meta li {
 		padding: 0;
 	}
+	.billing-address address {
+		font-size: 17px;
+		line-height: 23px;
+	}
+	.billing-address h3 {
+		font-size: 20px;
+	}
 </style>
     <?php
 }
